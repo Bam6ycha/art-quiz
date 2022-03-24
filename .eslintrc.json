@@ -1,0 +1,44 @@
+{
+  "overrides": [
+    {
+      "env": { "browser": true, "es2021": true },
+      "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended"],
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["import"],
+      "parserOptions": { "ecmaVersion": 2021, "sourceType": "module" },
+      "rules": {
+        "eqeqeq": "off",
+        "curly": "error",
+        "quotes": ["error", "double"],
+        "linebreak-style": "off",
+        "implicit-arrow-linebreak": "off",
+        "function-paren-newline": "off",
+        "operator-linebreak": ["error", "after"],
+        "comma-dangle": [
+          "error",
+          {
+            "arrays": "never",
+            "objects": "only-multiline",
+            "imports": "only-multiline",
+            "exports": "only-multiline",
+            "functions": "never"
+          }
+        ],
+        "no-plusplus": ["off", { "allowForLoopAfterthoughts": true }],
+        "no-inner-declarations": "off",
+        "class-methods-use-this": "off",
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "no-param-reassign": "off",
+        "no-return-assign": "off",
+        "import/extensions": 0,
+        "object-curly-newline": "off",
+        "no-await-in-loop": "off",
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-empty-function": ["off"],
+        "no-shadow": "off"
+      }
+    }
+  ]
+}

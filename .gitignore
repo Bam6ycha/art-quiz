@@ -102,3 +102,17 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Other files and folders
+# .settings/
+src/
+node_modules/
+
+
+# Executables
+# *.swf
+# *.air
+# *.ipa
+# *.apk
+# *.json
+# *.config.js
